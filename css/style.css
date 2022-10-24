@@ -2,16 +2,13 @@ body {
   background-color: hsl(30, 38%, 92%);
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
-
+  /* justify-content: center; */
 }
 
 .flex-container {
   display: flex;
   flex-direction: row;
-  /* max-width: 1440px; */
   justify-content: center;
-  margin-top: 5vh;
-  
 }
 
 @media (max-width: 800px) {
@@ -24,43 +21,44 @@ h1 {
   font-family: "Fraunces";
   color: hsl(212, 21%, 14%);
 }
-h2{
-    font-family: "Fraunces";
-    display: inline;
-    color: hsl(158, 36%, 37%);
-    font-size: 2em;
-
+h2 {
+  font-family: "Fraunces";
+  display: inline;
+  color: hsl(158, 36%, 37%);
+  font-size: 2em;
 }
-img{
-    /* border-radius: 15px; */
+img {
+    max-height: 424px;
 }
 .product,
 .image {
   text-align: left;
   /* max-width: 80%;
     max-height: 30vh; */
-    /* border-radius: 15px; */
-
-
+  /* border-radius: 15px; */
 }
 .product {
   background-color: white;
-  padding: 20vh;
+  padding: 4vh;
   font-size: 14px;
   color: hsl(228, 12%, 48%);
 }
-button{
-   background-color:  hsl(158, 36%, 37%);
-    color: white;
-    padding: 15px 60px;
-    text-align: center;
-    font-family: "Montserrat", sans-serif;
-    border-radius: 10px;
-    justify-content: center;    
-    cursor: pointer;
-
+button {
+  background-color: hsl(158, 36%, 37%);
+  color: white;
+  padding: 15px 60px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 10px;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: 0.4s;
 }
-.attribution {
+button:hover {
+  background-color: hsl(158, 36%, 14%);
+  color: white;
+}
+2 .attribution {
   font-size: 11px;
   text-align: center;
 }
