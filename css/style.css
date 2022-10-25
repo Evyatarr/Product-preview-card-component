@@ -8,40 +8,54 @@ body {
   justify-content: center;
 }
 h1 {
-    font-family: "Fraunces";
-    font-weight: 700;
-    color: hsl(212, 21%, 14%);
-    max-width: 220px;
-  }
-  
+  font-family: "Fraunces";
+  font-weight: 700;
+  color: hsl(212, 21%, 14%);
+  max-width: 210px;
+  font-size: 2rem;
+  line-height: 1;
+}
+s {
+  margin-left: 1rem;
+  position: relative;
+  top: -6px;
+}
+p {
+  font-weight: 500;
+  line-height: 1.75;
+  max-width: 230px;
+}
 .flex-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   max-width: 600px;
-  max-height: 417px;
-  border-radius: 15px;
+  max-height: 445px;
+  border-radius: 10px;
   overflow: hidden;
+  margin: 1rem;
 }
-.image-mobile{
-display: none;
+.image-mobile {
+  display: none;
 }
 @media (max-width: 800px) {
-
-
+  button {
+    width: 100%;
+  }
   .flex-container {
     flex-direction: column;
     max-height: none;
   }
-  .image-mobile{
-    display: initial;
+  .image-mobile {
+    display: flex;
   }
-.image{
+  .image {
     display: none;
-}
-h1, p{
+  }
+  h1,
+  p {
     max-width: none;
-}
+  }
 }
 
 h2 {
@@ -52,10 +66,12 @@ h2 {
   font-size: 2em;
 }
 img {
-width: 100%;
+  width: 100%;
+  height: 100%;
 }
-.icon{
-    width: initial;
+.icon {
+  width: initial;
+  padding-right: 3px;
 }
 .product,
 .image {
@@ -63,7 +79,7 @@ width: 100%;
 }
 .product {
   background-color: white;
-  padding: 4vh;
+  padding: 2.2rem 1.5rem;
   font-size: 14px;
   color: hsl(228, 12%, 48%);
   flex-shrink: 0;
@@ -71,13 +87,16 @@ width: 100%;
 button {
   background-color: hsl(158, 36%, 37%);
   color: white;
-  padding: 15px 60px;
+  padding: 13px 70px;
   text-align: center;
+  font-weight: bold;
   font-family: "Montserrat", sans-serif;
   border-radius: 10px;
   justify-content: center;
   cursor: pointer;
   transition-duration: 0.4s;
+  margin: 2rem 0rem;
+  display: block;
 }
 button:hover {
   background-color: hsl(158, 36%, 14%);
