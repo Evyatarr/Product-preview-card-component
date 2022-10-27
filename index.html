@@ -24,42 +24,33 @@
     <title>Frontend Mentor | Product preview card component</title>
   </head>
   <body>
-    <div class="flex-container">
-      <div class="image">
-        <img
-          src="./images/image-product-desktop.jpg"
-          alt="image of the perfume"
-        />
+    <main>
+      <div class="flex-container">
+        <picture class="image">
+          <source media="(min-width: 800px)" srcset="./images/image-product-desktop.jpg">
+          <img src="./images/image-product-mobile.jpg">
+        </picture>
+        <div class="product">
+          P E R F U M E
+          <h1>Gabrielle Essence Eau De Parfum</h1>
+          <p>
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+          <p class="price">$149.99</p>
+          <s>$169.99</s>
+          <button>
+            <img src="./images/icon-cart.svg" alt="icon of a shopping cart" class="icon" />
+            Add to Cart
+          </button>
+        </div>
       </div>
-      <div class="image-mobile">
-        <img
-          src="./images/image-product-mobile.jpg"
-          alt="mobile image of the perfume"
-        />
-      </div>
-      <div class="product">
-        P E R F U M E
-        <h1>Gabrielle Essence Eau De Parfum</h1>
-        <p>
-          A floral, solar and voluptuous
-          interpretation composed by Olivier
-          Polge, Perfumer-Creator 
-          for the House of CHANEL. 
-        </p>
-        <h2>$149.99</h2>
-        <s>$169.99</s> 
-        <button>
-          <img src="./images/icon-cart.svg" alt="icon cart" class="icon" />
-          Add to Cart
-        </button>
-      </div>
-    </div>
-
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="https://github.com/Evyatarr">Evyatar</a>.
     </div>
+  </main>
   </body>
 </html>

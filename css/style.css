@@ -35,9 +35,6 @@ p {
   overflow: hidden;
   margin: 1rem;
 }
-.image-mobile {
-  display: none;
-}
 @media (max-width: 800px) {
   button {
     width: 100%;
@@ -46,19 +43,13 @@ p {
     flex-direction: column;
     max-height: none;
   }
-  .image-mobile {
-    display: flex;
-  }
-  .image {
-    display: none;
-  }
   h1,
   p {
     max-width: none;
   }
 }
 
-h2 {
+.price {
   font-family: "Fraunces";
   font-weight: 700;
   display: inline;
